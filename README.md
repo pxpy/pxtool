@@ -50,6 +50,29 @@ cleaned_json = remove_json_wrapper(json_text)
 print(cleaned_json)
 ```
 
+### 开放api
+pip install pxtool[openapi]
+
+```python
+def call(xxx: str, url_suffix: str = '/XXXX/XXXX') -> Any:
+    ucg_config = {
+        'app_key': os.getenv('GATEWAY_APP_KEY', ''),
+        'app_secret': os.getenv('GATEWAY_APP_SECRET', ''),
+        'host': os.getenv('GATEWAY_HOST', 'https://xxx.xxx')
+    }
+
+    api_service = ApiGatewayService(ucg_config)
+
+    query_params = {
+        "XXX": xxx
+    }
+
+    return api_service.call_api(
+        api_path=url_suffix,
+        method='GET',
+        query_params=query_params
+    )
+```
 ## 要求
 - Python >= 3.6
 - termcolor (用于彩色日志输出)

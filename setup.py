@@ -20,7 +20,12 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
-     install_requires=[
+    install_requires=[
         "termcolor>=2.0.0",
     ],
+    extras_require={
+        'openapi': [
+            'requests>=2.25.0',
+        ],
+    },
 ) 
