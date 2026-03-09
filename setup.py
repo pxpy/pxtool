@@ -6,7 +6,7 @@ with io.open("README.md", encoding='utf-8') as f:
     long_description = f.read()
 setup(
     name="pxtool",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(),
     author="px",
     author_email="panxin@panxin.me",
