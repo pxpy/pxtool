@@ -82,5 +82,4 @@ MIT License
 
 ## 作者
 - 作者：px
-- 邮箱：panxin@panxin.me
 - 项目地址：https://github.com/pxpy/pxtool
